@@ -1,4 +1,4 @@
-# Flicker: An Interactive Particle Simulation Game using CUDA OpenGL Interop
+# Flicker: A GPU-Accelerated Interactive Particle Simulation Game using CUDA OpenGL Interop
 Authored by Jayden Nyamiaka
 
 This covers the Description and Usage. For more information, reference
@@ -15,13 +15,14 @@ to be computed and rendered every frame, introducing significant
 challenges for continuously passing data between the CPU and GPU. 
 
 The application currently supports 1 player and 3 different particle types.
+
 Player: 
  - Controlled via WASD or Arrow Keys (simultaneously)
  - Color smoothly transitions over RGB spectrum
  - Can die on collision with particles. This should be on when using as a game.
 
 
-Particles
+**Particles**
 
 Seeker (Particle 1):
 This particle aims at the Player's position (at spawn time) and darts straight 
@@ -42,7 +43,8 @@ spots of dangerous unpredictability for the Player. Brownian motion models
 the random motion of particles suspended in a medium and is a mean zero, 
 continuous process, often implemented using GPU acceleration due to its 
 computational parallelism. This particle is also gray colored and slightly 
-bigger than the other
+bigger than the others.
+
 For more information, refer to the code.
 
 
